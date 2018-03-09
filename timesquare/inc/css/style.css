@@ -1,0 +1,306 @@
+
+.next {
+    -webkit-animation: next 0.8s infinite ease-in-out alternate;
+    animation: next 0.8s infinite ease-in-out alternate;
+}
+
+@-webkit-keyframes next {
+    0% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+}
+
+.notice {
+    transform: scale(1);
+    -webkit-animation: notice 1s infinite ease-in-out alternate;
+}
+
+@-webkit-keyframes notice {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+    }
+}
+
+.rotate{
+    -webkit-animation: rotate 1s infinite linear alternate;
+    -webkit-transform: rotate(-5deg);
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: rotate(5deg);
+    }
+}
+
+.upDown{
+    -webkit-animation: upDown 1s infinite linear alternate;
+}
+@-webkit-keyframes upDown {
+    0% {
+        -webkit-transform: translateY(0px);
+    }
+    100% {
+        -webkit-transform: translateY(7px);
+    }
+}
+
+
+#main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    -webkit-transform: scale(0);
+}
+
+#main.active {
+    -webkit-transform: scale(1);
+}
+
+#main .tip {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+}
+
+#main .tip .bg {
+    position: absolute;
+    width: 273px;
+    height: 282px;
+    top: 20%;
+    left: 50%;
+    margin-left: -141px;
+}
+
+
+
+#countDown,#quantity{
+    font-size: 20px;
+    line-height: 30px;
+    color: #336600;
+}
+.foodBox{
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    padding: 5px;
+}
+
+.hide{
+    -webkit-animation: hide 1s  linear;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+.disappear{
+    display: none!important;
+}
+
+.pic{
+    width: 270px;
+    height: 360px;
+    float: left;
+    position: relative!important;
+    background: url("../image/coupon/code.png") no-repeat;
+    background-size: 100%;
+}
+#codeBox{
+    overflow: hidden;
+    width: 10000px;
+    height: 360px;
+    left: 0;
+    position: absolute;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 50%;
+    float: left;
+    position: relative!important;
+    margin-left: 5px;
+}
+#lunbo{
+    overflow: hidden;
+}
+
+.luo1{
+    -webkit-animation: luo1 15s infinite linear;
+}
+
+@-webkit-keyframes luo1 {
+    0% {
+        -webkit-transform: translate(0,0);
+    }
+    80% {
+        -webkit-transform: translate(300px,300px);
+    }
+    100% {
+        -webkit-transform: translate(300px,300px);
+    }
+}
+
+.luo2{
+    -webkit-animation: luo2 6s infinite linear;
+}
+
+@-webkit-keyframes luo2 {
+    0% {
+        -webkit-transform: translate(0,0);
+    }
+    70% {
+        -webkit-transform: translate(100px,50px);
+    }
+    100% {
+        -webkit-transform: translate(100px,50px);
+    }
+}
+.luo3{
+    -webkit-animation: luo3 15s infinite linear;
+}
+
+@-webkit-keyframes luo3 {
+    0% {
+        -webkit-transform: translate(0,0);
+    }
+    10% {
+        -webkit-transform: translate(0,0);
+    }
+    100%{
+        -webkit-transform: translate(300px,200px);
+    }
+}
+.luo4{
+    -webkit-animation: luo4 10s infinite linear;
+}
+
+@-webkit-keyframes luo4 {
+    0% {
+         -webkit-transform: translate(0,0);
+     }
+    90% {
+        -webkit-transform: translate(100px,200px);
+    }
+    100% {
+        -webkit-transform: translate(100px,200px);
+    }
+}
+
+.cover{
+    background: #000000;
+    opacity: 0.8;
+}
+.rulesBox{
+    color: #85a45d;
+    overflow: scroll;
+}
+
+.rulesBox div{
+    text-align: justify;
+    position: static!important;
+    font-size: 11px;
+    line-height: 20px;
+}
+h4{
+    position: static!important;
+    line-height: 30px;
+}
+h2{
+    position: static!important;
+    line-height: 60px;
+}
+.title{
+    font-size: 20px;
+    position: static!important;
+    line-height: 60px;
+    font-weight: bold;
+}
+.title1{
+    font-size: 13px;
+    font-weight: bold;
+    position: static!important;
+    width: 65px;
+    height: 20px;
+    display: inline-block;
+}
+.rulesBox span{
+    display: inline-block!important;
+}
+
+.proText{
+    font-size: 26px;
+    color: #336600;
+    font-weight: 600;
+}
+
+.proText1{
+    font-size: 16px;
+    color: #336600;
+    text-align: center;
+}
+#codePic{
+    width: 120px;
+    height: 120px;
+    left: 75px;
+    top: 115px;
+    background: url("../image/code.png") no-repeat;
+    background-size: 100%;
+}
+#codeNum{
+    text-align: center;
+    color: #336600;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    left: 35px;
+    top: 250px;
+}
+
+#proText{
+    width:200px;
+    height:50px;
+    left: 60px;
+    top: 50px;
+    position: absolute;
+}
+#price{
+    width: 50px;
+    height: 50px;
+    left: 60px;
+    top: 50px;
+    position: absolute;
+}
+#noUse{
+    width: 200px;
+    height: 50px;
+    left: 35px;
+    top: 78px;
+    position: absolute;
+}
+#awardNum,#awardTxt{
+    color:#336600;
+    font-size: 14px;
+    font-weight: 500;
+}
+#awardList{
+    color:#336600;
+    font-size: 12px;
+}

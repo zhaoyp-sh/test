@@ -1,0 +1,288 @@
+@charset "UTF-8";
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+}
+.div{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    font-size: 11px;
+    z-index: 100;
+    text-align: center;
+    line-height: 100%;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 10001;
+    background: url("../image/bg.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+#loader #loader_data {
+    position: fixed;
+    top: 47%;
+    left: 50%;
+    display: block;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform-origin: 0 0;
+    overflow: hidden;
+}
+
+.layer > .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transform-origin: 0 0;
+}
+
+.layer > .container * {
+    position: absolute;
+    display: block;
+}
+
+@-webkit-keyframes rotation {
+    10% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg)
+    }
+    50%,
+    60% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+    }
+    90% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg)
+    }
+    100% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg)
+    }
+}
+
+@media screen and (orientation: portrait) {
+    /*竖屏 css*/
+    .block {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    /*横屏 css*/
+    .block {
+        z-index: 10999;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 100vh;
+    }
+
+    #rotate_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -34px;
+        margin-top: -54px;
+        display: inline-block;
+        width: 67px;
+        height: 109px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -webkit-animation: rotation infinite 1.5s ease-in-out;
+        -webkit-background-size: 67px;
+        background-size: 67px;
+        background-image: url(../image/rotate_lock.png);
+    }
+
+    #rotate_txt {
+        top: 35%;
+        position: absolute;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 80px;
+        padding: 10%;
+        width: 80%;
+        line-height: 24px;
+    }
+}
+
+#music{
+    width: 50px;
+    height: 52px;
+    position: fixed;
+    right: 0;
+    z-index: 10000;
+    background: url("../image/music/1.png") no-repeat;
+    background-size: 100%;
+}
+#card{
+    width: 71.25%;
+    height: 53.57%;
+    position: absolute;
+    z-index: 10000;
+    background: url("../image/1/card.png") no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    left:50%;
+    margin-left:-35.5%;
+    margin-top: -50%;
+    top:50%;
+}
+.card{
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+}
+.lookDetail{
+    position: absolute;
+    width: 64%;
+    height: 35%;
+    top: 57%;
+    left: 19%;
+}
+.reminder{
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    height: 100%;
+    background: #000000;
+    opacity:0.6;
+
+}
+.remd{
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    height: 100%;
+    background: url("../image/notice.png") no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+.remind{
+    left: -2000px;
+}
+.loadTxt{
+    width: 63px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    margin-left:-31px;
+    top: 50%;
+}
+.fish{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 15%;
+    top: 29%;
+}
+.cake{
+    width: 37px;
+    height: 42px;
+    position: absolute;
+    left: 35%;
+    top: 30%;
+}
+.coffee{
+    width: 35px;
+    height: 23px;
+    position: absolute;
+    left: 51%;
+    top: 32%;
+}
+.food{
+    width: 25px;
+    height: 34px;
+    position: absolute;
+    left: 67%;
+    top: 30%;
+}
+.crab{
+    width: 39px;
+    height: 25px;
+    position: absolute;
+    left: 80%;
+    top: 32%;
+}
+
+img{
+    outline: none;
+    border: none;
+}
+
+.boxDiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+.box1{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #d1eaf7;
+}
+.box2{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    background: #b6d4b7;
+}
